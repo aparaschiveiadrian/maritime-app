@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MaritimeApp.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+220b13b90e6e44e435a02c6a91e363759cebaef7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b15131e4540c502f227d71eef2f70b1a37faebca")]
 [assembly: System.Reflection.AssemblyProductAttribute("MaritimeApp.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MaritimeApp.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
