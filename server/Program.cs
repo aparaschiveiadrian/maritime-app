@@ -16,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // app services and repos
 builder.Services.AddScoped<CountryService>();
+builder.Services.AddScoped<PortService>();
 
 var app = builder.Build();
 

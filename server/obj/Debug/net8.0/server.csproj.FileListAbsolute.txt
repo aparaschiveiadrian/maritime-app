@@ -113,3 +113,4 @@ C:\Users\adidi\RiderProjects\maritime-app\server\bin\Debug\net8.0\Swashbuckle.As
 C:\Users\adidi\RiderProjects\maritime-app\server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\adidi\RiderProjects\maritime-app\server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\adidi\RiderProjects\maritime-app\server\obj\Debug\net8.0\server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\adidi\RiderProjects\maritime-app\server\obj\Debug\net8.0\server.sourcelink.json

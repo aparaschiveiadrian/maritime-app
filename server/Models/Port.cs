@@ -2,14 +2,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace server.Models;
 
-public class Country
+public class Port
 {
     [Key]
-    public int IdCountry { get; set; }
-
+    public int IdPort { get; set; }
+    
     [Required]
     [MaxLength(100)]
     public string Name { get; set; } = string.Empty;
     
-    public ICollection<Port> Ports { get; set; } = null!;
+    //FK
+    public int IdCountry { get; set; }
+    public Country Country { get; set; } = null!;
 }
