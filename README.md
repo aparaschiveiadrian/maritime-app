@@ -2,6 +2,7 @@
 
 - Supports managing ships, ports, voyages, and country-port relationships.
 - The application uses **PostgreSQL 15**, running in a **Docker container** defined in `docker-compose.yml` for deployment. It maps the container’s default port **5432** to **2000** on the host machine for local access.
+- A **CI pipeline** is configured using **GitHub Actions** to automatically build and test the application on every push and pull request. Merging to `main` is blocked if any tests fail.
 ---
 
 ## Features Implemented
