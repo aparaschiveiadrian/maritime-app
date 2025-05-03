@@ -42,7 +42,7 @@ public class CountryControllerTests
     [Fact]
     public void GetById_ExistingId_ReturnsOk()
     {
-        var country = new CountryResponseDto(1, "Romania");
+        var country = new CountryResponseDto(1, "A");
         _mockService.Setup(s => s.GetById(1)).Returns(country);
 
         var result = _controller.GetById(1);
