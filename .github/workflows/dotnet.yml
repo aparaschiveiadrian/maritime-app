@@ -3,11 +3,7 @@
 
 name: .NET CI piepline for Tests
 
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+on: [push]
 
 jobs:
   build:
@@ -16,7 +12,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-    - uses: actions/checkout@v4
+      uses: actions/checkout@v4
     
     - name: Setup .NET
       uses: actions/setup-dotnet@v4
