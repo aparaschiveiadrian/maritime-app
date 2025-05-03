@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Dtos.Country;
 using server.Services;
+using server.Services.Interfaces;
 
 namespace server.Controllers
 {
@@ -8,9 +9,9 @@ namespace server.Controllers
     [Route("api/[controller]")]
     public class CountryController : ControllerBase
     {
-        private readonly CountryService _service;
+        private readonly ICountryService _service;
 
-        public CountryController(CountryService service)
+        public CountryController(ICountryService service)
         {
             _service = service;
         }

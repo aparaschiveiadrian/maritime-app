@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Dtos.Voyage;
 using server.Services;
+using server.Services.Interfaces;
 
 namespace server.Controllers;
 
@@ -8,9 +9,9 @@ namespace server.Controllers;
 [Route("api/[controller]")]
 public class VoyageController : ControllerBase
 {
-    private readonly VoyageService _service;
+    private readonly IVoyageService _service;
 
-    public VoyageController(VoyageService service)
+    public VoyageController(IVoyageService service)
     {
         _service = service;
     }

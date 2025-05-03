@@ -37,7 +37,7 @@ namespace server.Migrations
 
                     b.HasKey("IdCountry");
 
-                    b.ToTable("Countries");
+                    b.ToTable("Countries", (string)null);
                 });
 
             modelBuilder.Entity("server.Models.Port", b =>
@@ -60,7 +60,7 @@ namespace server.Migrations
 
                     b.HasIndex("IdCountry");
 
-                    b.ToTable("Ports");
+                    b.ToTable("Ports", (string)null);
                 });
 
             modelBuilder.Entity("server.Models.Ship", b =>
@@ -81,7 +81,7 @@ namespace server.Migrations
 
                     b.HasKey("IdShip");
 
-                    b.ToTable("Ships");
+                    b.ToTable("Ships", (string)null);
                 });
 
             modelBuilder.Entity("server.Models.Voyage", b =>
@@ -118,7 +118,7 @@ namespace server.Migrations
 
                     b.HasIndex("IdShip");
 
-                    b.ToTable("Voyages");
+                    b.ToTable("Voyages", (string)null);
                 });
 
             modelBuilder.Entity("server.Models.Port", b =>

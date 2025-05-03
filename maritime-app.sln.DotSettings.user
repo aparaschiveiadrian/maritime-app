@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/Highlighting/HighlightingSourceSnapshotLocation/@EntryValue">C:\Users\adidi\AppData\Local\JetBrains\Rider2025.1\resharper-host\temp\Rider\vAny\CoverageData\_maritime-app.622948196\Snapshot\snapshot.utdcvr</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=991b464a_002D47a5_002D4aaa_002Da6db_002D42e214d9a3e6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="CountryServiceTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Services.CountryServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Services.ShipServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Services.PortServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Services.VoyageServiceTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Controllers.CountryControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Controllers.PortControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Controllers.ShipControllerTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::45C632AC-CB32-4925-976A-4B27503D1BD7::net8.0::MaritimeApp.Tests.UnitTests.Controllers.VoyageControllerTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

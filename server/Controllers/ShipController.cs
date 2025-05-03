@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Dtos.Ship;
 using server.Services;
+using server.Services.Interfaces;
 
 namespace server.Controllers;
 
@@ -8,9 +9,9 @@ namespace server.Controllers;
 [Route("api/[controller]")]
 public class ShipController : ControllerBase
 {
-    private readonly ShipService _service;
+    private readonly IShipService _service;
 
-    public ShipController(ShipService service)
+    public ShipController(IShipService service)
     {
         _service = service;
     }

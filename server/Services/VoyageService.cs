@@ -3,10 +3,11 @@ using server.Data;
 using server.Dtos.Voyage;
 using server.Mappers;
 using server.Models;
+using server.Services.Interfaces;
 
 namespace server.Services;
 
-public class VoyageService
+public class VoyageService : IVoyageService
 {
     private readonly ApplicationDbContext _context;
 

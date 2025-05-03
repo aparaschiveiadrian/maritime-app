@@ -2,10 +2,11 @@ using Microsoft.EntityFrameworkCore;
 using server.Data;
 using server.Dtos.Port;
 using server.Mappers;
+using server.Services.Interfaces;
 
 namespace server.Services;
 
-public class PortService
+public class PortService : IPortService
 {
     private readonly ApplicationDbContext _context;
 

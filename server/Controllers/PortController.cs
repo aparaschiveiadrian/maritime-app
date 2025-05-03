@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using server.Dtos.Port;
 using server.Services;
+using server.Services.Interfaces;
 
 namespace server.Controllers;
 
@@ -8,9 +9,9 @@ namespace server.Controllers;
 [Route("api/[controller]")]
 public class PortController : ControllerBase
 {
-    private readonly PortService _service;
+    private readonly IPortService _service;
 
-    public PortController(PortService service)
+    public PortController(IPortService service)
     {
         _service = service;
     }

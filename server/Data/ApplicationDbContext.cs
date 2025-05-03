@@ -11,10 +11,11 @@ public class ApplicationDbContext : DbContext
     }
     
     
-    public DbSet<Country> Countries { get; set; }
-    public DbSet<Port> Ports { get; set; }
-    public DbSet<Ship> Ships { get; set; }
-    public DbSet<Voyage> Voyages { get; set; }
+    public virtual DbSet<Country> Countries { get; set; }
+    public virtual DbSet<Port> Ports { get; set; }
+    public virtual DbSet<Ship> Ships { get; set; }
+    public virtual DbSet<Voyage> Voyages { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);

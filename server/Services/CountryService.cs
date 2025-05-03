@@ -5,10 +5,11 @@ using server.Models;
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using server.Services.Interfaces;
 
 namespace server.Services;
 
-public class CountryService
+public class CountryService : ICountryService
 {
     private readonly ApplicationDbContext _context;
 

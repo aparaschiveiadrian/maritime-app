@@ -2,10 +2,11 @@ using server.Data;
 using server.Dtos.Ship;
 using server.Mappers;
 using server.Models;
+using server.Services.Interfaces;
 
 namespace server.Services;
 
-public class ShipService
+public class ShipService : IShipService
 {
     private readonly ApplicationDbContext _context;
 
