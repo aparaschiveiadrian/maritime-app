@@ -1,0 +1,23 @@
+.intro {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: transparent;
+  color: var(--color-surface);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.intro-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--color-accent);
+}
+
+.intro-description {
+  font-size: 1.125rem;
+  color: var(--color-surface);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}

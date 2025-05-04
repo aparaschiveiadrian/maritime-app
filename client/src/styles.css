@@ -1,0 +1,14 @@
+:root {
+  --color-background: #00040c;
+  --color-secondary-background: #2880e8;
+  --color-primary: #1021e4;
+  --color-primary-light: #8075FF;
+  --color-surface: #7cbde6;
+  --color-accent: #fff5f5;
+}
+body{
+  background-color: var(--color-background);
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
