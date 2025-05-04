@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Countries</h2>
+
+  <div class="add-section">
+    <input [(ngModel)]="newCountryName" placeholder="New country name" />
+    <button (click)="addCountry()">Add</button>
+  </div>
+
+  <ul>
+    <div *ngIf="error" class="error-message">{{ error }}</div>
+    <div *ngIf="success" class="success-message">{{ success }}</div>
+
+    <li *ngFor="let country of countries">
+      <div *ngIf="editingId !== country.idCountry">
+        <strong>ID:</strong> {{ country.idCountry }} — {{ country.name }}
+        <button (click)="startEdit(country)">Edit</button>
+        <button (click)="deleteCountry(country.idCountry)">Delete</button>
+      </div>
+
+      <div *ngIf="editingId === country.idCountry">
+        <strong>ID:</strong> {{ country.idCountry }}
+        <input [(ngModel)]="editedCountryName" />
+        <button (click)="saveEdit(country.idCountry)">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </li>
+  </ul>
+</div>

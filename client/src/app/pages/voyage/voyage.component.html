@@ -1,0 +1,52 @@
+<div class="container">
+  <h2>Voyages</h2>
+
+  <form class="form" (ngSubmit)="createVoyage()">
+    <label>
+      Ship ID:
+      <input type="number" [(ngModel)]="newVoyage.idShip" name="idShip" required />
+    </label>
+
+    <label>
+      Departure Port ID:
+      <input type="number" [(ngModel)]="newVoyage.departurePortId" name="departurePortId" required />
+    </label>
+
+    <label>
+      Arrival Port ID:
+      <input type="number" [(ngModel)]="newVoyage.arrivalPortId" name="arrivalPortId" required />
+    </label>
+
+    <label>
+      Voyage Date:
+      <input type="date" [(ngModel)]="newVoyage.voyageDate" name="voyageDate" required />
+    </label>
+
+    <label>
+      Start Time:
+      <input type="datetime-local" [(ngModel)]="newVoyage.startTime" name="startTime" required />
+    </label>
+
+    <label>
+      End Time:
+      <input type="datetime-local" [(ngModel)]="newVoyage.endTime" name="endTime" required />
+    </label>
+
+    <button type="submit">Create</button>
+  </form>
+
+  <ul>
+    <li *ngFor="let voyage of voyages">
+      <strong>{{ voyage.shipName }}</strong>
+      <br />
+      {{ voyage.departurePortName }} → {{ voyage.arrivalPortName }}
+      <br />
+      <small>
+        Date: {{ voyage.voyageDate | date }}<br />
+        Start: {{ voyage.startTime | date:'shortTime' }} — End: {{ voyage.endTime | date:'shortTime' }}
+      </small>
+      <br />
+      <button (click)="deleteVoyage(voyage.idVoyage)">Delete</button>
+    </li>
+  </ul>
+</div>

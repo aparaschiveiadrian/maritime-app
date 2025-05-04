@@ -1,9 +1,17 @@
 <nav class="navbar" role="navigation" aria-label="Main Navigation">
   <div class="navbar-brand">
-    <a routerLink="/" class="navbar-title"> Maritime App</a>
+    <a routerLink="/" class="navbar-title">Maritime App</a>
   </div>
   <ul class="navbar-links">
-    <li><a routerLink="/" routerLinkActive="active">Home</a></li>
+    <li>
+      <a
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
+      </a>
+    </li>
     <li><a routerLink="/country" routerLinkActive="active">Countries</a></li>
     <li><a routerLink="/ship" routerLinkActive="active">Ships</a></li>
     <li><a routerLink="/port" routerLinkActive="active">Ports</a></li>

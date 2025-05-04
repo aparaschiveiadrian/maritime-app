@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Ships</h2>
+
+  <div *ngIf="error" class="error-message">{{ error }}</div>
+  <div *ngIf="success" class="success-message">{{ success }}</div>
+
+  <div class="add-section">
+    <input [(ngModel)]="newName" placeholder="Ship name"/>
+    <input type="number" [(ngModel)]="newSpeed" placeholder="Max speed"/>
+    <button (click)="addShip()">Add</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let ship of ships">
+      <div *ngIf="editingId !== ship.idShip">
+        <strong>#{{ ship.idShip }}</strong> - {{ ship.name }} ({{ ship.maxSpeed }} km/h)
+        <button (click)="startEdit(ship)">Edit</button>
+        <button (click)="deleteShip(ship.idShip)">Delete</button>
+      </div>
+
+      <div *ngIf="editingId === ship.idShip">
+        <input [(ngModel)]="editedName"/>
+        <input type="number" [(ngModel)]="editedSpeed"/>
+        <button (click)="saveEdit(ship.idShip)">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </li>
+  </ul>
+</div>
