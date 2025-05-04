@@ -1,0 +1,29 @@
+<div class="container">
+  <h2>Ports</h2>
+
+  <div *ngIf="error" class="error-message">{{ error }}</div>
+  <div *ngIf="success" class="success-message">{{ success }}</div>
+
+  <div class="add-section">
+    <input [(ngModel)]="newPortName" placeholder="Port name" />
+    <input type="number" [(ngModel)]="newCountryId" placeholder="Country ID" />
+    <button (click)="addPort()">Add</button>
+  </div>
+
+  <ul>
+    <li *ngFor="let port of ports">
+      <div *ngIf="editingId !== port.idPort">
+        <strong>#{{ port.idPort }}</strong> - {{ port.name }} ({{ port.countryName }})
+        <button (click)="startEdit(port)">Edit</button>
+        <button (click)="deletePort(port.idPort)">Delete</button>
+      </div>
+
+      <div *ngIf="editingId === port.idPort">
+        <input [(ngModel)]="editedName" />
+        <input type="number" [(ngModel)]="editedCountryId" placeholder="New country ID" />
+        <button (click)="saveEdit(port.idPort)">Save</button>
+        <button (click)="cancelEdit()">Cancel</button>
+      </div>
+    </li>
+  </ul>
+</div>
