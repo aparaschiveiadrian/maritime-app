@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# 
+#
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "server", "server\server.csproj", "{40C7435A-5B86-4197-BA48-7E0CE5AB10BF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaritimeApp.Tests", "MaritimeApp.Tests\MaritimeApp.Tests.csproj", "{45C632AC-CB32-4925-976A-4B27503D1BD7}"
